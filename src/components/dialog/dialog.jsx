@@ -19,7 +19,7 @@ export default function FormDialog(props) {
 
     const handleEditValues = () => {
         console.log(props.baseUrl)
-        axios.put(`http://192.168.68.103:8080/api/tutorials/${editValues.id}`, {
+        axios.put(`http://localhost:8080/api/tutorials/${editValues.id}`, {
             description: editValues.description,
             amount: editValues.amount,
             method: editValues.method,
@@ -29,7 +29,7 @@ export default function FormDialog(props) {
     }
 
     const handleDeleteGame = () => {
-        axios.delete(`http://192.168.68.103:8080/api/tutorials/${editValues.id}`)
+        axios.delete(`http://localhost:8080/api/tutorials/${editValues.id}`)
     }
 
     const handleChangeValues = (value)=>{

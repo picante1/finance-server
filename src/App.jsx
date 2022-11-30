@@ -25,12 +25,12 @@ function App() {
         },{headers:{
                 'Access-Control-Allow-Origin':'*',
                 'Access-Control-Allow-Methods':'OPTIONS, GET, POST, PUT',
-                'Access-Control-Max-Age':2592000,
+                'Access-Control-Max-Age':2592000000,
         }
         }).then((response) =>{
             console.log(response)
         })
-        fetch('http://localhost:8080/api/tutorials')
+        fetch('http://localhost:8080/api/tutorials/')
             .then(res => res.json())
             .then(res => console.log(res));;
     }
