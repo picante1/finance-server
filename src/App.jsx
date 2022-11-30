@@ -39,6 +39,8 @@ function App() {
         Axios.get(`${baseUrl}`,{
             headers:{
                 'Access-Control-Allow-Origin':'*',
+                'Access-Control-Allow-Methods':'OPTIONS, GET, POST, PUT',
+                'Access-Control-Max-Age':2592000000,
             }
         })
             .then((response)=>{
