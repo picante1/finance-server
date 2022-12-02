@@ -15,8 +15,6 @@ function App() {
         }))
     }
 
-
-
     const handleClickButton = () => {
         Axios.post(`${baseUrl}`, {
             description: values.description,
@@ -31,7 +29,7 @@ function App() {
         }).then((response) =>{
             console.log(response)
         })
-        fetch('http://localhost:8080/api/tutorials/')
+        fetch('https://servidor-nine.vercel.app/api/tutorials/')
             .then(res => res.json())
             .then(res => console.log(res));;
     }
