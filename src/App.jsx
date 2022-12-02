@@ -5,7 +5,7 @@ import Card from "./components/card";
 
 function App() {
 
-    const baseUrl = "https://finance-server.vercel.app/api/tutorials/"
+    const baseUrl = "https://servidor-nine.vercel.app/api/tutorials/"
     const [values, setValues] = useState();
     const [movimiento, setMovimiento] = useState();
     const handleChangeValues = (value) => {
